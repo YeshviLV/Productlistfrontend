@@ -1,7 +1,14 @@
-export default function App() {
+import React from 'react';
+import Header from './components/Header';
+import ProductTable from './components/ProductTable';
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div className="bg-light-gray min-h-screen">
+      <Header />
+      <ProductTable />
+    </div>
+  );
+};
+
+export default App;
